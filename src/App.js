@@ -1,24 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Items from './components/Items/Items';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <React.Fragment>
+      <h1>Kosserin's loading skeleton</h1>
+      <p>This is just an example of how to implement loading skeleton while data is not fully loaded. If you don't see loading skeleton, go for Network and select slower internet to see it. Code is available on my <a href='https://github.com/kosserin/loading-skeleton' target="_blank">GitHub</a></p>
+      <Items />
+    </React.Fragment>
   );
 }
 
